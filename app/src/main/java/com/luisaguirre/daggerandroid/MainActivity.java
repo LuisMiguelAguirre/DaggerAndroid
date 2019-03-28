@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         boolean injected = networkApi != null;
         TextView userAvailable = findViewById(R.id.target);
 
-        userAvailable.setText("Dependency injection worked: " + String.valueOf(injected));
+        userAvailable.setText("Dependency with dagger application injection worked: " + String.valueOf(injected));
 
         if (networkApi != null) {
             boolean isUserValid = networkApi.validateUser("Luis", "12345");
