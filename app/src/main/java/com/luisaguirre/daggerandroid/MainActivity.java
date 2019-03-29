@@ -9,9 +9,9 @@ import com.luisaguirre.daggerandroid.networking.NetworkApi;
 
 import javax.inject.Inject;
 
-import dagger.android.AndroidInjection;
+import dagger.android.DaggerActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends DaggerActivity {
 
     @Inject
     NetworkApi networkApi;
@@ -19,8 +19,6 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        AndroidInjection.inject(this);
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
