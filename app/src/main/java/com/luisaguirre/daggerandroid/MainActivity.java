@@ -1,7 +1,6 @@
 package com.luisaguirre.daggerandroid;
 
 import android.annotation.SuppressLint;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -9,9 +8,9 @@ import com.luisaguirre.daggerandroid.networking.NetworkApi;
 
 import javax.inject.Inject;
 
-import dagger.android.DaggerActivity;
+import dagger.android.support.DaggerAppCompatActivity;
 
-public class MainActivity extends DaggerActivity {
+public class MainActivity extends DaggerAppCompatActivity {
 
     @Inject
     NetworkApi networkApi;
